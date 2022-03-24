@@ -1,2 +1,0 @@
-/bin/x86_64-linux-gnu-ar qc libblueberry.a CMakeFiles/blueberry.dir/src/application.cc.o CMakeFiles/blueberry.dir/src/log.cc.o
-/bin/x86_64-linux-gnu-ranlib libblueberry.a
