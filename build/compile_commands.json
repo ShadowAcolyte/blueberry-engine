@@ -1,0 +1,132 @@
+[
+{
+  "directory": "/home/shadow_acolyte/dev/blueberry-engine/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9 -DSPDLOG_COMPILED_LIB -I/home/shadow_acolyte/dev/blueberry-engine/include -I/home/shadow_acolyte/dev/blueberry-engine/libs/glad/include -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/include -I/home/shadow_acolyte/dev/blueberry-engine/libs/glm/glm/.. -I/home/shadow_acolyte/dev/blueberry-engine/libs/stb/include -I/home/shadow_acolyte/dev/blueberry-engine/libs/spdlog/include -g -std=gnu++17 -o CMakeFiles/blueberry.dir/src/application.cc.o -c /home/shadow_acolyte/dev/blueberry-engine/src/application.cc",
+  "file": "/home/shadow_acolyte/dev/blueberry-engine/src/application.cc"
+},
+{
+  "directory": "/home/shadow_acolyte/dev/blueberry-engine/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9 -DSPDLOG_COMPILED_LIB -I/home/shadow_acolyte/dev/blueberry-engine/include -I/home/shadow_acolyte/dev/blueberry-engine/libs/glad/include -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/include -I/home/shadow_acolyte/dev/blueberry-engine/libs/glm/glm/.. -I/home/shadow_acolyte/dev/blueberry-engine/libs/stb/include -I/home/shadow_acolyte/dev/blueberry-engine/libs/spdlog/include -g -std=gnu++17 -o CMakeFiles/blueberry.dir/src/log.cc.o -c /home/shadow_acolyte/dev/blueberry-engine/src/log.cc",
+  "file": "/home/shadow_acolyte/dev/blueberry-engine/src/log.cc"
+},
+{
+  "directory": "/home/shadow_acolyte/dev/blueberry-engine/build/libs/glad",
+  "command": "/bin/x86_64-linux-gnu-gcc-9  -I/home/shadow_acolyte/dev/blueberry-engine/libs/glad/include -g -o CMakeFiles/glad.dir/src/glad.c.o -c /home/shadow_acolyte/dev/blueberry-engine/libs/glad/src/glad.c",
+  "file": "/home/shadow_acolyte/dev/blueberry-engine/libs/glad/src/glad.c"
+},
+{
+  "directory": "/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src",
+  "command": "/bin/x86_64-linux-gnu-gcc-9 -D_GLFW_USE_CONFIG_H -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/include -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src -I/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src -g -fPIC -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/context.c.o -c /home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/context.c",
+  "file": "/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/context.c"
+},
+{
+  "directory": "/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src",
+  "command": "/bin/x86_64-linux-gnu-gcc-9 -D_GLFW_USE_CONFIG_H -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/include -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src -I/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src -g -fPIC -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/init.c.o -c /home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/init.c",
+  "file": "/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/init.c"
+},
+{
+  "directory": "/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src",
+  "command": "/bin/x86_64-linux-gnu-gcc-9 -D_GLFW_USE_CONFIG_H -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/include -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src -I/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src -g -fPIC -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/input.c.o -c /home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/input.c",
+  "file": "/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/input.c"
+},
+{
+  "directory": "/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src",
+  "command": "/bin/x86_64-linux-gnu-gcc-9 -D_GLFW_USE_CONFIG_H -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/include -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src -I/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src -g -fPIC -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/monitor.c.o -c /home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/monitor.c",
+  "file": "/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/monitor.c"
+},
+{
+  "directory": "/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src",
+  "command": "/bin/x86_64-linux-gnu-gcc-9 -D_GLFW_USE_CONFIG_H -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/include -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src -I/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src -g -fPIC -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/vulkan.c.o -c /home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/vulkan.c",
+  "file": "/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/vulkan.c"
+},
+{
+  "directory": "/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src",
+  "command": "/bin/x86_64-linux-gnu-gcc-9 -D_GLFW_USE_CONFIG_H -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/include -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src -I/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src -g -fPIC -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/window.c.o -c /home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/window.c",
+  "file": "/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/window.c"
+},
+{
+  "directory": "/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src",
+  "command": "/bin/x86_64-linux-gnu-gcc-9 -D_GLFW_USE_CONFIG_H -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/include -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src -I/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src -g -fPIC -Wall -std=gnu99 -o CMakeFiles/glfw.dir/x11_init.c.o -c /home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/x11_init.c",
+  "file": "/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/x11_init.c"
+},
+{
+  "directory": "/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src",
+  "command": "/bin/x86_64-linux-gnu-gcc-9 -D_GLFW_USE_CONFIG_H -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/include -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src -I/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src -g -fPIC -Wall -std=gnu99 -o CMakeFiles/glfw.dir/x11_monitor.c.o -c /home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/x11_monitor.c",
+  "file": "/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/x11_monitor.c"
+},
+{
+  "directory": "/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src",
+  "command": "/bin/x86_64-linux-gnu-gcc-9 -D_GLFW_USE_CONFIG_H -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/include -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src -I/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src -g -fPIC -Wall -std=gnu99 -o CMakeFiles/glfw.dir/x11_window.c.o -c /home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/x11_window.c",
+  "file": "/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/x11_window.c"
+},
+{
+  "directory": "/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src",
+  "command": "/bin/x86_64-linux-gnu-gcc-9 -D_GLFW_USE_CONFIG_H -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/include -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src -I/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src -g -fPIC -Wall -std=gnu99 -o CMakeFiles/glfw.dir/xkb_unicode.c.o -c /home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/xkb_unicode.c",
+  "file": "/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/xkb_unicode.c"
+},
+{
+  "directory": "/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src",
+  "command": "/bin/x86_64-linux-gnu-gcc-9 -D_GLFW_USE_CONFIG_H -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/include -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src -I/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src -g -fPIC -Wall -std=gnu99 -o CMakeFiles/glfw.dir/posix_time.c.o -c /home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/posix_time.c",
+  "file": "/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/posix_time.c"
+},
+{
+  "directory": "/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src",
+  "command": "/bin/x86_64-linux-gnu-gcc-9 -D_GLFW_USE_CONFIG_H -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/include -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src -I/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src -g -fPIC -Wall -std=gnu99 -o CMakeFiles/glfw.dir/posix_thread.c.o -c /home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/posix_thread.c",
+  "file": "/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/posix_thread.c"
+},
+{
+  "directory": "/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src",
+  "command": "/bin/x86_64-linux-gnu-gcc-9 -D_GLFW_USE_CONFIG_H -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/include -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src -I/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src -g -fPIC -Wall -std=gnu99 -o CMakeFiles/glfw.dir/glx_context.c.o -c /home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/glx_context.c",
+  "file": "/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/glx_context.c"
+},
+{
+  "directory": "/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src",
+  "command": "/bin/x86_64-linux-gnu-gcc-9 -D_GLFW_USE_CONFIG_H -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/include -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src -I/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src -g -fPIC -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/egl_context.c.o -c /home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/egl_context.c",
+  "file": "/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/egl_context.c"
+},
+{
+  "directory": "/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src",
+  "command": "/bin/x86_64-linux-gnu-gcc-9 -D_GLFW_USE_CONFIG_H -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/include -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src -I/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src -g -fPIC -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/osmesa_context.c.o -c /home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/osmesa_context.c",
+  "file": "/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/osmesa_context.c"
+},
+{
+  "directory": "/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src",
+  "command": "/bin/x86_64-linux-gnu-gcc-9 -D_GLFW_USE_CONFIG_H -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/include -I/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src -I/home/shadow_acolyte/dev/blueberry-engine/build/libs/glfw/src -g -fPIC -Wall -std=gnu99 -o CMakeFiles/glfw.dir/linux_joystick.c.o -c /home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/linux_joystick.c",
+  "file": "/home/shadow_acolyte/dev/blueberry-engine/libs/glfw/src/linux_joystick.c"
+},
+{
+  "directory": "/home/shadow_acolyte/dev/blueberry-engine/build/libs/spdlog",
+  "command": "/bin/x86_64-linux-gnu-g++-9 -DSPDLOG_COMPILED_LIB -I/home/shadow_acolyte/dev/blueberry-engine/libs/spdlog/include -g -std=c++11 -o CMakeFiles/spdlog.dir/src/spdlog.cpp.o -c /home/shadow_acolyte/dev/blueberry-engine/libs/spdlog/src/spdlog.cpp",
+  "file": "/home/shadow_acolyte/dev/blueberry-engine/libs/spdlog/src/spdlog.cpp"
+},
+{
+  "directory": "/home/shadow_acolyte/dev/blueberry-engine/build/libs/spdlog",
+  "command": "/bin/x86_64-linux-gnu-g++-9 -DSPDLOG_COMPILED_LIB -I/home/shadow_acolyte/dev/blueberry-engine/libs/spdlog/include -g -std=c++11 -o CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o -c /home/shadow_acolyte/dev/blueberry-engine/libs/spdlog/src/stdout_sinks.cpp",
+  "file": "/home/shadow_acolyte/dev/blueberry-engine/libs/spdlog/src/stdout_sinks.cpp"
+},
+{
+  "directory": "/home/shadow_acolyte/dev/blueberry-engine/build/libs/spdlog",
+  "command": "/bin/x86_64-linux-gnu-g++-9 -DSPDLOG_COMPILED_LIB -I/home/shadow_acolyte/dev/blueberry-engine/libs/spdlog/include -g -std=c++11 -o CMakeFiles/spdlog.dir/src/color_sinks.cpp.o -c /home/shadow_acolyte/dev/blueberry-engine/libs/spdlog/src/color_sinks.cpp",
+  "file": "/home/shadow_acolyte/dev/blueberry-engine/libs/spdlog/src/color_sinks.cpp"
+},
+{
+  "directory": "/home/shadow_acolyte/dev/blueberry-engine/build/libs/spdlog",
+  "command": "/bin/x86_64-linux-gnu-g++-9 -DSPDLOG_COMPILED_LIB -I/home/shadow_acolyte/dev/blueberry-engine/libs/spdlog/include -g -std=c++11 -o CMakeFiles/spdlog.dir/src/file_sinks.cpp.o -c /home/shadow_acolyte/dev/blueberry-engine/libs/spdlog/src/file_sinks.cpp",
+  "file": "/home/shadow_acolyte/dev/blueberry-engine/libs/spdlog/src/file_sinks.cpp"
+},
+{
+  "directory": "/home/shadow_acolyte/dev/blueberry-engine/build/libs/spdlog",
+  "command": "/bin/x86_64-linux-gnu-g++-9 -DSPDLOG_COMPILED_LIB -I/home/shadow_acolyte/dev/blueberry-engine/libs/spdlog/include -g -std=c++11 -o CMakeFiles/spdlog.dir/src/async.cpp.o -c /home/shadow_acolyte/dev/blueberry-engine/libs/spdlog/src/async.cpp",
+  "file": "/home/shadow_acolyte/dev/blueberry-engine/libs/spdlog/src/async.cpp"
+},
+{
+  "directory": "/home/shadow_acolyte/dev/blueberry-engine/build/libs/spdlog",
+  "command": "/bin/x86_64-linux-gnu-g++-9 -DSPDLOG_COMPILED_LIB -I/home/shadow_acolyte/dev/blueberry-engine/libs/spdlog/include -g -std=c++11 -o CMakeFiles/spdlog.dir/src/cfg.cpp.o -c /home/shadow_acolyte/dev/blueberry-engine/libs/spdlog/src/cfg.cpp",
+  "file": "/home/shadow_acolyte/dev/blueberry-engine/libs/spdlog/src/cfg.cpp"
+},
+{
+  "directory": "/home/shadow_acolyte/dev/blueberry-engine/build/libs/spdlog",
+  "command": "/bin/x86_64-linux-gnu-g++-9 -DSPDLOG_COMPILED_LIB -I/home/shadow_acolyte/dev/blueberry-engine/libs/spdlog/include -g -std=c++11 -o CMakeFiles/spdlog.dir/src/fmt.cpp.o -c /home/shadow_acolyte/dev/blueberry-engine/libs/spdlog/src/fmt.cpp",
+  "file": "/home/shadow_acolyte/dev/blueberry-engine/libs/spdlog/src/fmt.cpp"
+}
+]
