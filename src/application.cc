@@ -8,68 +8,68 @@ void APIENTRY _GLDebugCallback(GLenum source, GLenum type, GLuint id, GLenum sev
     GLsizei length, const GLchar* message, const void* userParam)
 {
     if (severity == GL_DEBUG_SEVERITY_NOTIFICATION)
-        Blueberry::Logger::Info("[OpenGL] {}", message);
+        blueberry::logger::info("[OpenGL] {}", message);
     else if (severity == GL_DEBUG_SEVERITY_MEDIUM || severity == GL_DEBUG_SEVERITY_LOW)
-        Blueberry::Logger::Warn("[OpenGL] {}", message);
+        blueberry::logger::warn("[OpenGL] {}", message);
     else
-        Blueberry::Logger::Error("[OpenGL] {}", message);
+        blueberry::logger::error("[OpenGL] {}", message);
 }
 
-Blueberry::Application::Application(const std::string& title, int width, int height)
+blueberry::Application::Application(const std::string& title, int width, int height)
 {
     // Initialize logger
-    Logger::Init();
-    Logger::Info("Blueberry Engine v0.1");
+    logger::init();
+    logger::info("Blueberry Engine v0.1");
 
     // Initialize GLFW/OpenGL and create window
-    Logger::Info("Initializing GLFW...");
+    logger::info("Initializing GLFW...");
     if (!glfwInit())
     {
-        Logger::Critical("Failed to initialize GLFW!");
+        logger::critical("Failed to initialize GLFW!");
         std::exit(-1);
     }
-    Logger::Info("Creating window...");
-    window.width = width;
-    window.height = height;
-    window.title = title.c_str();
-    window.handle = glfwCreateWindow(width, height, title.c_str(), NULL, NULL);
-    if (!window.handle)
+    logger::info("Creating window...");
+    m_window.m_width = width;
+    m_window.m_height = height;
+    m_window.m_title = title.c_str();
+    m_window.m_handle = glfwCreateWindow(width, height, title.c_str(), NULL, NULL);
+    if (!m_window.m_handle)
     {
-        Logger::Critical("Failed to create Window!");
+        logger::critical("Failed to create Window!");
         glfwTerminate();
         std::exit(-1);
     }
-    glfwMakeContextCurrent(window.handle);
+    glfwMakeContextCurrent(m_window.m_handle);
     // Initialize GLAD
-    Logger::Info("Initializing OpenGL loader...");
+    logger::info("Initializing OpenGL loader...");
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
     {
-        Logger::Critical("Failed to intialize OpenGL function loader (GLAD)!");
+        logger::critical("Failed to intialize OpenGL function loader (GLAD)!");
         exit(-1);
     }
     glEnable(GL_DEBUG_OUTPUT);
     glEnable(GL_DEBUG_OUTPUT_SYNCHRONOUS);
     glDebugMessageCallback(_GLDebugCallback, nullptr);
 
-    Logger::Info("Initialization complete!");
+    logger::info("Initialization complete!");
 }
 
-Blueberry::Application::~Application()
+blueberry::Application::~Application()
 {
     glfwTerminate();
 }
 
-void Blueberry::Application::Run()
+void blueberry::Application::run()
 {
-    glClearColor(1, 0, 0, 1);
-    while (!glfwWindowShouldClose(window.handle))
+    glClearColor(0.3098f, 0.5255f, 0.9686f, 1);
+    while (!glfwWindowShouldClose(m_window.m_handle))
     {
         glClear(GL_COLOR_BUFFER_BIT);
 
         // this->Update();
-        this->Render();
+        this->render();
 
-        glfwSwapBuffers(window.handle);
+        glfwSwapBuffers(m_window.m_handle);
         glfwPollEvents();
     }
 }

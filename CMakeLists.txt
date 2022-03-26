@@ -14,6 +14,9 @@ set (SRC
 
 add_library (blueberry ${SRC})
 
+# testing directory
+add_subdirectory (test)
+
 target_compile_features (blueberry PRIVATE cxx_std_17)
 target_link_libraries (blueberry PRIVATE glad glfw glm stb spdlog::spdlog)
 target_include_directories (blueberry PUBLIC "include/")

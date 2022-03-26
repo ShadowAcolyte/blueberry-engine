@@ -1,8 +1,10 @@
 #pragma once
 
+#include <string>
+
 #include <blueberry/window.hh>
 
-namespace Blueberry
+namespace blueberry
 {
     class Application
     {
@@ -14,14 +16,14 @@ namespace Blueberry
         }
         virtual ~Application();
 
-        void Run();
+        void run();
 
         // To be implemented in subclass
         // --------------------------------
-        virtual void Update(float delta_time) = 0;  // Use for game logic
-        virtual void Render() = 0;                  // Use for rendering
+        virtual void update(float delta_time) = 0;  // Use for game logic
+        virtual void render() = 0;                  // Use for rendering
         // --------------------------------
     private:
-        Window window;
+        Window m_window;
     };
 }
