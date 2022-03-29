@@ -3,8 +3,9 @@
 
 #include <blueberry/application.hh>
 #include <blueberry/log.hh>
+#include <blueberry/input/mouse_input.hh>
 
-void APIENTRY _GLDebugCallback(GLenum source, GLenum type, GLuint id, GLenum severity,
+void APIENTRY _gl_debug_callback(GLenum source, GLenum type, GLuint id, GLenum severity,
     GLsizei length, const GLchar* message, const void* userParam)
 {
     if (severity == GL_DEBUG_SEVERITY_NOTIFICATION)
@@ -49,7 +50,10 @@ blueberry::Application::Application(const std::string& title, int width, int hei
     }
     glEnable(GL_DEBUG_OUTPUT);
     glEnable(GL_DEBUG_OUTPUT_SYNCHRONOUS);
-    glDebugMessageCallback(_GLDebugCallback, nullptr);
+    glDebugMessageCallback(_gl_debug_callback, nullptr);
+
+    // Initialize input
+    blueberry::input::mouse::init(m_window.m_handle);
 
     logger::info("Initialization complete!");
 }
@@ -57,6 +61,11 @@ blueberry::Application::Application(const std::string& title, int width, int hei
 blueberry::Application::~Application()
 {
     glfwTerminate();
+}
+
+namespace blueberry::input::mouse
+{
+    void reset();
 }
 
 void blueberry::Application::run()
@@ -68,6 +77,8 @@ void blueberry::Application::run()
 
         // this->Update();
         this->render();
+
+        blueberry::input::mouse::reset();
 
         glfwSwapBuffers(m_window.m_handle);
         glfwPollEvents();

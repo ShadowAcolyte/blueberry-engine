@@ -5,3 +5,4 @@ link_libraries (blueberry)
 include_directories ("../include" "../libs/glad/include" "../libs/glfw/include" "../glm" "../spdlog/include" "../stb/include")
 
 add_executable (test "main.cc")
+add_executable (input_test "input_test.cc")

@@ -10,7 +10,9 @@ add_subdirectory (libs/spdlog)
 
 set (SRC
  "src/application.cc"
- "src/log.cc")
+ "src/log.cc"
+ "src/graphics/shader.cc"
+ "src/input/mouse_input.cc")
 
 add_library (blueberry ${SRC})
 
