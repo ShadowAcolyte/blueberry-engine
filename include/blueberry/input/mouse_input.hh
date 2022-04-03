@@ -10,19 +10,19 @@ namespace blueberry
         {
             void init(GLFWwindow* window);
 
-            float get_xpos();
-            float get_ypos();
+            float getPosX();
+            float getPosY();
 
-            float get_lastx();
-            float get_lasty();
+            float getLastX();
+            float getLastY();
 
-            float get_offsetx();
-            float get_offsety();
+            float getOffsetX();
+            float getOffsetY();
 
-            float get_scrollx();
-            float get_scrolly();
+            float getScrollX();
+            float getScrollY();
 
-            bool is_button_pressed(int btn_code);
+            bool isButtonPressed(int btn_code);
         }
     }
 }

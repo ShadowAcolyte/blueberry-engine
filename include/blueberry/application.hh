@@ -17,6 +17,8 @@ namespace blueberry
         virtual ~Application();
 
         void run();
+        void setVsync(bool vsync);
+        void close();
 
         // To be implemented in subclass
         // --------------------------------

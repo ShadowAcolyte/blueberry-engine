@@ -61,47 +61,47 @@ void blueberry::input::mouse::reset()
     _scrollx = _scrolly = 0;
 }
 
-float blueberry::input::mouse::get_xpos()
+float blueberry::input::mouse::getPosX()
 {
     return _xpos;
 }
 
-float blueberry::input::mouse::get_ypos()
+float blueberry::input::mouse::getPosY()
 {
     return _ypos;
 }
 
-float blueberry::input::mouse::get_lastx()
+float blueberry::input::mouse::getLastX()
 {
     return _lastx;
 }
 
-float blueberry::input::mouse::get_lasty()
+float blueberry::input::mouse::getLastY()
 {
     return _lasty;
 }
 
-float blueberry::input::mouse::get_offsetx()
+float blueberry::input::mouse::getOffsetX()
 {
     return _offsetx;
 }
 
-float blueberry::input::mouse::get_offsety()
+float blueberry::input::mouse::getOffsetY()
 {
     return _offsety;
 }
 
-float blueberry::input::mouse::get_scrollx()
+float blueberry::input::mouse::getScrollX()
 {
     return _scrollx;
 }
 
-float blueberry::input::mouse::get_scrolly()
+float blueberry::input::mouse::getScrollY()
 {
     return _scrolly;
 }
 
-bool blueberry::input::mouse::is_button_pressed(int btn_code)
+bool blueberry::input::mouse::isButtonPressed(int btn_code)
 {
     return _btn_state[btn_code];
 }

@@ -12,7 +12,9 @@ set (SRC
  "src/application.cc"
  "src/log.cc"
  "src/graphics/shader.cc"
- "src/input/mouse_input.cc")
+ "src/graphics/3d/perspective_camera.cc"
+ "src/input/mouse_input.cc"
+ "src/input/keyboard_input.cc" )
 
 add_library (blueberry ${SRC})
 

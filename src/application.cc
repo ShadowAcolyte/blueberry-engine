@@ -4,6 +4,7 @@
 #include <blueberry/application.hh>
 #include <blueberry/log.hh>
 #include <blueberry/input/mouse_input.hh>
+#include <blueberry/input/keyboard_input.hh>
 
 void APIENTRY _gl_debug_callback(GLenum source, GLenum type, GLuint id, GLenum severity,
     GLsizei length, const GLchar* message, const void* userParam)
@@ -54,6 +55,7 @@ blueberry::Application::Application(const std::string& title, int width, int hei
 
     // Initialize input
     blueberry::input::mouse::init(m_window.m_handle);
+    blueberry::input::keyboard::init(m_window.m_handle);
 
     logger::info("Initialization complete!");
 }
@@ -70,17 +72,39 @@ namespace blueberry::input::mouse
 
 void blueberry::Application::run()
 {
+    int64_t _t_curr = std::chrono::duration_cast<std::chrono::nanoseconds>(std::chrono::steady_clock::now().time_since_epoch()).count();
+    int64_t _t_prev = std::chrono::duration_cast<std::chrono::nanoseconds>(std::chrono::steady_clock::now().time_since_epoch()).count();
+    float _delta_ms = 0;
+
     glClearColor(0.3098f, 0.5255f, 0.9686f, 1);
     while (!glfwWindowShouldClose(m_window.m_handle))
     {
         glClear(GL_COLOR_BUFFER_BIT);
 
-        // this->Update();
+        _t_curr = std::chrono::duration_cast<std::chrono::nanoseconds>(std::chrono::steady_clock::now().time_since_epoch()).count();
+        _delta_ms = (_t_curr - _t_prev) / 1000000.0f;
+        _t_prev = _t_curr;
+
+        this->update(_delta_ms);
         this->render();
 
         blueberry::input::mouse::reset();
+        blueberry::input::keyboard::handleKeyboardInput();
 
         glfwSwapBuffers(m_window.m_handle);
         glfwPollEvents();
     }
+}
+
+void blueberry::Application::setVsync(bool vsync)
+{
+    if (vsync)
+        glfwSwapInterval(1);
+    else
+        glfwSwapInterval(0);
+}
+
+void blueberry::Application::close()
+{
+    glfwSetWindowShouldClose(m_window.m_handle, 1);
 }
