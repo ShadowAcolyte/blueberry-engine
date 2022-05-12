@@ -10,8 +10,8 @@ namespace blueberry
         {
             void init(GLFWwindow* window);
 
-            void handleKeyboardInput();
-            bool isKeyPressed(int key_code);
+            void handle_keyboard_input();
+            bool is_key_pressed(int key_code);
         }
     }
 }

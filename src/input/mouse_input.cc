@@ -27,10 +27,7 @@ static void _cursor_pos_callback(GLFWwindow* window, double xpos, double ypos)
 
 static void _mouse_button_callback(GLFWwindow* window, int btn, int action, int mods)
 {
-    if (action == GLFW_PRESS)
-        _btn_state[btn] = true;
-    else
-        _btn_state[btn] = false;
+    _btn_state[btn] = action;
 }
 
 void blueberry::input::mouse::init(GLFWwindow* window)
@@ -61,47 +58,47 @@ void blueberry::input::mouse::reset()
     _scrollx = _scrolly = 0;
 }
 
-float blueberry::input::mouse::getPosX()
+float blueberry::input::mouse::get_pos_x()
 {
     return _xpos;
 }
 
-float blueberry::input::mouse::getPosY()
+float blueberry::input::mouse::get_pos_y()
 {
     return _ypos;
 }
 
-float blueberry::input::mouse::getLastX()
+float blueberry::input::mouse::get_last_x()
 {
     return _lastx;
 }
 
-float blueberry::input::mouse::getLastY()
+float blueberry::input::mouse::get_last_y()
 {
     return _lasty;
 }
 
-float blueberry::input::mouse::getOffsetX()
+float blueberry::input::mouse::get_offset_x()
 {
     return _offsetx;
 }
 
-float blueberry::input::mouse::getOffsetY()
+float blueberry::input::mouse::get_offset_y()
 {
     return _offsety;
 }
 
-float blueberry::input::mouse::getScrollX()
+float blueberry::input::mouse::get_scroll_x()
 {
     return _scrollx;
 }
 
-float blueberry::input::mouse::getScrollY()
+float blueberry::input::mouse::get_scroll_y()
 {
     return _scrolly;
 }
 
-bool blueberry::input::mouse::isButtonPressed(int btn_code)
+bool blueberry::input::mouse::is_button_pressed(int btn_code)
 {
-    return _btn_state[btn_code];
+    return _btn_state[btn_code] == GLFW_PRESS;
 }

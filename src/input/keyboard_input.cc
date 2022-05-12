@@ -26,7 +26,7 @@ void blueberry::input::keyboard::init(GLFWwindow* window)
     glfwSetKeyCallback(window, _key_callback);
 }
 
-void blueberry::input::keyboard::handleKeyboardInput()
+void blueberry::input::keyboard::handle_keyboard_input()
 {
     while (!_unhandledKeys.empty())
     {
@@ -37,7 +37,7 @@ void blueberry::input::keyboard::handleKeyboardInput()
     }
 }
 
-bool blueberry::input::keyboard::isKeyPressed(int key_code)
+bool blueberry::input::keyboard::is_key_pressed(int key_code)
 {
     return _keys[key_code];
 }

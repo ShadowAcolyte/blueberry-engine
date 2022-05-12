@@ -12,6 +12,7 @@ set (SRC
  "src/application.cc"
  "src/log.cc"
  "src/graphics/shader.cc"
+ "src/graphics/texture.cc"
  "src/graphics/3d/perspective_camera.cc"
  "src/input/mouse_input.cc"
  "src/input/keyboard_input.cc" )

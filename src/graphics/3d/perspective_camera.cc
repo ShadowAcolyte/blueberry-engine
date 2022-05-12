@@ -19,7 +19,7 @@ blueberry::PerspectiveCamera::PerspectiveCamera(float fov, float aspect_ratio, f
     m_projView = m_projection * m_view;
 }
 
-void blueberry::PerspectiveCamera::updateProjection(float fov, float aspect_ratio, float znear, float zfar)
+void blueberry::PerspectiveCamera::update_projection(float fov, float aspect_ratio, float znear, float zfar)
 {
     m_projection = glm::perspective(fov, aspect_ratio, znear, zfar);
     m_projView = m_projection * m_view;

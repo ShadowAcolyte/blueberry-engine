@@ -89,14 +89,14 @@ void blueberry::Application::run()
         this->render();
 
         blueberry::input::mouse::reset();
-        blueberry::input::keyboard::handleKeyboardInput();
+        blueberry::input::keyboard::handle_keyboard_input();
 
         glfwSwapBuffers(m_window.m_handle);
         glfwPollEvents();
     }
 }
 
-void blueberry::Application::setVsync(bool vsync)
+void blueberry::Application::set_vsync(bool vsync)
 {
     if (vsync)
         glfwSwapInterval(1);

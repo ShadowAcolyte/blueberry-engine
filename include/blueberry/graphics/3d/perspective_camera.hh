@@ -26,6 +26,6 @@ namespace blueberry
         // Update view and proj-view matrices, should ideally be called once per frame
         void update();
         // Update projection matrix
-        void updateProjection(float fov, float aspectRatio, float znear, float zfar);
+        void update_projection(float fov, float aspectRatio, float znear, float zfar);
     };
 }
